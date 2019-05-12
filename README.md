@@ -5,6 +5,7 @@ A remote USB LED, with Raspberry pi. Programmed in node.js
   - Linux
   - Node.js
   - Raspberry pi ( tested with Raspberry Pi 3 b+ )
+  - Uhubctl ( github: https://github.com/mvp/uhubctl )
   
 # How to install it
   1. Clone the project using `git clone https://github.com/irfantopal/raspi-remote-led.git`
