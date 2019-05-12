@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Remote USB LED</title>
+</head>
+<body>
+    <h1>Open/Close the LED</h1>
+    <input id="led" type="checkbox" style="height: 50px; width: 50px;">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+    <script>
+        var socket = io();
+        window.addEventListener("load", function(){
+            var led = document.getElementById("led"); 
+            led.addEventListener("change", function() {
+                socket.emit("led", Number(this.checked));
+            });
+        });
+
+        socket.on('led', function (data) { 
+            document.getElementById("led").checked = data; 
+        socket.emit("led", data);
+		});
+    </script>
+</body>
+</html>
