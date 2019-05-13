@@ -15,5 +15,5 @@ A remote USB LED, with Raspberry pi. Programmed in node.js
   5. Connect your USB LED to the USB Port 2 in your Raspberry pi, you can change the USB Port in the app.js file
   6. Go `http://(raspberry's ip):8080 ` in your browser ( you must be in the same internet with raspberry pi )
   
-# Author
-  I made it, you can use it in your school projects etc. ( look to the LICENSE )
+# Usage of the project
+ You can use it in your school projects etc. ( look to the LICENSE )
